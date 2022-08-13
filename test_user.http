@@ -1,0 +1,22 @@
+GET http://127.0.0.1:5000/users/
+Accept: application/json
+
+###
+
+POST http://127.0.0.1:5000/users/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "username": "David",
+  "password": "test",
+  "role": "user"
+}
+
+###
+
+DELETE http://127.0.0.1:5000/users/4
+Content-Type: application/json
+Authorization: Bearer
+
+###
